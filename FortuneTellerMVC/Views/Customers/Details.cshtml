@@ -4,9 +4,20 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Your mystical fortune</h2>
 
-<div>
+<p>
+    @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName) will retire in @ViewBag.RetirementAge
+    with $@ViewBag.BankMoney in the bank, a vacation home in @ViewBag.VacationHome and a @ViewBag.RideType as their hot ride.
+
+</p>
+
+
+@*firstName + " " + lastName + " " + "will retire in " + retireTime + " years with $" +
+ bankMoney + " in the bank,\n a vacation home in " + vacHome + " and a " + rideType +
+ " to get around.");*@
+
+@*<div>
     <h4>Customer</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -63,4 +74,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
